@@ -10,7 +10,7 @@ namespace GeneralStore.MVC.Controllers
 {
     public class ProductController : Controller
     {
-        private ApplicationDbContext _db = new ApplicationDbContext();
+        private ProductDbContext _db = new ProductDbContext();
 
         // GET: Product
         public ActionResult Index()

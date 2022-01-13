@@ -101,8 +101,8 @@ C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\b
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.AssemblyReference.cache
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.CoreCompileInputs.cache
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.CopyComplete
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.dll
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.pdb
+C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.AssemblyReference.cache
