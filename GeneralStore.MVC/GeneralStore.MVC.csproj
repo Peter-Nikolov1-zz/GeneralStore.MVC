@@ -175,6 +175,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201130124298_InitialCreate.cs" />
+    <Compile Include="Migrations\202201130124298_InitialCreate.Designer.cs">
+      <DependentUpon>202201130124298_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201131733248_ProductandCustomerDBMigration.cs" />
+    <Compile Include="Migrations\202201131733248_ProductandCustomerDBMigration.Designer.cs">
+      <DependentUpon>202201131733248_ProductandCustomerDBMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -265,6 +274,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202201130124298_InitialCreate.resx">
+      <DependentUpon>202201130124298_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201131733248_ProductandCustomerDBMigration.resx">
+      <DependentUpon>202201131733248_ProductandCustomerDBMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

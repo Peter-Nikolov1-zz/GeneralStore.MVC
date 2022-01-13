@@ -24,9 +24,5 @@ namespace GeneralStore.MVC.Models
         public string FullName { get; }
     }
 
-    public class CustomerDbContext : DbContext
-    {
-        public DbSet<Customer> Customers { get; set; }
-
-    }
+    
 }

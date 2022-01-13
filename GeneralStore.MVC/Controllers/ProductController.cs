@@ -10,7 +10,7 @@ namespace GeneralStore.MVC.Controllers
 {
     public class ProductController : Controller
     {
-        private ProductDbContext _db = new ProductDbContext();
+        private ApplicationDbContext _db = new ApplicationDbContext();
 
         // GET: Product
         public ActionResult Index()
@@ -41,13 +41,8 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Delete
         // Product/Delete/{id}
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if(id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
-
             Product product = _db.Products.Find(id);
             if(product == null)
             {
@@ -60,7 +55,7 @@ namespace GeneralStore.MVC.Controllers
         // Product/Delete/{id}
         [HttpPost,ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult DeleteProduct(int id)
         {
             Product product = _db.Products.Find(id);
             _db.Products.Remove(product);
@@ -70,12 +65,8 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Edit
         // Product/Edit/{id}
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if(id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
             Product product = _db.Products.Find(id);
             if(product == null)
             {
@@ -101,12 +92,8 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Details
         // Product/Details/{id}
-        public ActionResult Details(int? id)
-        {
-            if(id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
+        public ActionResult Details(int id)
+        { 
             Product product = _db.Products.Find(id);
             if(product == null)
             {

@@ -24,12 +24,9 @@ namespace GeneralStore.MVC.Models
         public double Price { get; set; }
 
         [Required]
-        [Display(Name = "It is food")]
+        [Display(Name = "Is this item Food?")]
         public Boolean IsFood { get; set; }
     }
 
-    public class ProductDbContext : DbContext
-    {
-        public DbSet<Product> Products { get; set; }
-    }
+
 }

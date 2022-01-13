@@ -10,7 +10,8 @@ namespace GeneralStore.MVC.Controllers
 {
     public class CustomerController : Controller
     {
-        private CustomerDbContext _db = new CustomerDbContext();
+        private ApplicationDbContext _db = new ApplicationDbContext();
+
         // GET: Customer
         public ActionResult Index()
         {
@@ -38,12 +39,8 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Customer
         // Customer/Delete/{id}
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
             Customer customer = _db.Customers.Find(id);
             if (customer == null)
             {
@@ -56,7 +53,7 @@ namespace GeneralStore.MVC.Controllers
         // Customer/Delete/{id}
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult DeleteCustomer(int id)
         {
             Customer customer = _db.Customers.Find(id);
             _db.Customers.Remove(customer);
@@ -66,12 +63,8 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Edit
         // Customer/Edit/{id}
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
             Customer customer = _db.Customers.Find(id);
             if (customer == null)
             {
@@ -97,14 +90,10 @@ namespace GeneralStore.MVC.Controllers
 
         // GET: Details
         // Customer/Details/{id}
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
-            if(id == null)
-            {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
-            }
             Customer customer = _db.Customers.Find(id);
-            if(customer == null)
+            if (customer == null)
             {
                 return HttpNotFound();
             }
