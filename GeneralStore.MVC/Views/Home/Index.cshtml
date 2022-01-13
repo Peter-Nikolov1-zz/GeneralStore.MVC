@@ -8,28 +8,28 @@
         Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
         Come browse our products and see what we have for you.
     </p>
-    @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
+    
     @Html.ActionLink("Learn More About Us", "About")
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Browse Our Selection</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Feel free to take a look at our products! We offer a wide variety of products for the public to purchase.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Create an Account</h2>
+        <p>Create an account with us to utilize our Transaction feature, purchasing our products has never been easier!</p>
+        @Html.ActionLink("Become a Customer", "Create", "Customer", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>View Transactions   <b>COMING SOON</b></h2>
+        <p>
+            Log into your account to view previous Transactions you've made at our beautiful store!
+        </p>
+        @Html.ActionLink("View Transactions", "Details", "Transactions", null, new { @class = "btn btn-primary btn-large" })
     </div>
 </div>
