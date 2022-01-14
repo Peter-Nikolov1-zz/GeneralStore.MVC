@@ -25,7 +25,7 @@ namespace GeneralStore.MVC.Models
 
         [Required]
         [Display(Name = "Is this item Food?")]
-        public Boolean IsFood { get; set; }
+        public bool IsFood { get; set; }
     }
 
 

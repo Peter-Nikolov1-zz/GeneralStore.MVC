@@ -105,7 +105,9 @@ C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\o
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.CopyComplete
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.dll
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.pdb
-C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.AssemblyReference.cache
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.InitialCreate.resources
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.GenerateResource.cache
 C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.ProductandCustomerDBMigration.resources
+C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.TransactionMigration.resources
+C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.Migrations.UpdatedTransactions.resources
+C:\Users\nikol\source\repos\GeneralStore.MVC\GeneralStore.MVC\GeneralStore.MVC\obj\Debug\GeneralStore.MVC.csproj.AssemblyReference.cache

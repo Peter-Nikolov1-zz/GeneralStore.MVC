@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TransactionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,12 +184,21 @@
     <Compile Include="Migrations\202201131733248_ProductandCustomerDBMigration.Designer.cs">
       <DependentUpon>202201131733248_ProductandCustomerDBMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201131927584_TransactionMigration.cs" />
+    <Compile Include="Migrations\202201131927584_TransactionMigration.Designer.cs">
+      <DependentUpon>202201131927584_TransactionMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201131930346_UpdatedTransactions.cs" />
+    <Compile Include="Migrations\202201131930346_UpdatedTransactions.Designer.cs">
+      <DependentUpon>202201131930346_UpdatedTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Transactions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -258,6 +268,8 @@
     <Content Include="Views\Customer\Delete.cshtml" />
     <Content Include="Views\Customer\Edit.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Transactions\Index.cshtml" />
+    <Content Include="Views\Transactions\CreateTransaction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +293,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201131733248_ProductandCustomerDBMigration.resx">
       <DependentUpon>202201131733248_ProductandCustomerDBMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201131927584_TransactionMigration.resx">
+      <DependentUpon>202201131927584_TransactionMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201131930346_UpdatedTransactions.resx">
+      <DependentUpon>202201131930346_UpdatedTransactions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
